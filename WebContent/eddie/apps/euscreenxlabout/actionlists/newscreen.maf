@@ -1,0 +1,8 @@
+loadStylesheet(screen,generic)
+loadStylesheet(screen,specific)
+loadContent(screen,template)
+loadContent(screen,header)
+loadContent(screen,footer)
+loadContent(screen,mobilenav)
+loadContent(screen,linkinterceptor)
+setRole(screen,"aboutpage")
