@@ -1,5 +1,6 @@
 setUrlTrigger(/lou/euscreen/about.html,/lou/domain/webtv/html5application/euscreenxlabout)
-loadStylesheet(screen,generic)
+loadStylesheet(screen,bootstrap)
+loadStylesheet(screen,daniel)
 loadStylesheet(screen,specific)
 loadContent(screen,template)
 loadContent(screen,header)
