@@ -1,6 +1,7 @@
 package org.springfield.lou.application.types;
 
 import org.springfield.lou.application.Html5Application;
+import org.springfield.lou.screen.Screen;
 
 public class EuscreenxlaboutApplication extends Html5Application{
 		
@@ -18,5 +19,9 @@ public class EuscreenxlaboutApplication extends Html5Application{
 		this.addReferidCSS("bootstrap", "/euscreenxlelements/bootstrap");
 		
 	}
+ 	
+ 	public void initializeScreen(Screen s){
+ 		s.putMsg("header", "", "setActivePage(about)");
+ 	}
 
 }
