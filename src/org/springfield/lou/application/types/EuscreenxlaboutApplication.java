@@ -22,5 +22,9 @@ public class EuscreenxlaboutApplication extends Html5Application{
  	public void initializeScreen(Screen s){
  		s.putMsg("header", "", "setActivePage(about)");
  	}
+ 	
+ 	public String getFavicon() {
+        return "/eddie/apps/euscreenxlelements/img/favicon.png";
+    }
 
 }
