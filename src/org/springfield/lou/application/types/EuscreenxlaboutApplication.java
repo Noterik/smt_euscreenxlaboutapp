@@ -14,8 +14,12 @@ public class EuscreenxlaboutApplication extends Html5Application{
 		this.addReferid("terms", "/euscreenxlelements/terms");
 		this.addReferid("linkinterceptor", "/euscreenxlelements/linkinterceptor");
 		
-		this.addReferidCSS("daniel", "/euscreenxlelements/generic");
+		this.addReferidCSS("fontawesome", "/euscreenxlelements/fontawesome");
 		this.addReferidCSS("bootstrap", "/euscreenxlelements/bootstrap");
+		this.addReferidCSS("theme", "/euscreenxlelements/theme");
+		this.addReferidCSS("genericadditions", "/euscreenxlelements/generic");
+		this.addReferidCSS("all", "/euscreenxlelements/all");
+		this.addReferidCSS("terms", "/euscreenxlelements/terms");
 		
 	}
  	
