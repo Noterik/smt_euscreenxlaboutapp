@@ -1,6 +1,7 @@
 package org.springfield.lou.application.types;
 
 import org.springfield.lou.application.Html5Application;
+import org.springfield.lou.homer.LazyHomer;
 import org.springfield.lou.screen.Screen;
 
 public class EuscreenxlaboutApplication extends Html5Application{
@@ -23,8 +24,17 @@ public class EuscreenxlaboutApplication extends Html5Application{
 		
 	}
  	
+ 	private boolean inDevelMode() {
+    	return LazyHomer.inDeveloperMode();
+    }
+ 	
  	public void initializeScreen(Screen s){
  		s.putMsg("header", "", "setActivePage(about)");
+ 		if(!this.inDevelMode()){
+			s.putMsg("linkinterceptor", "", "interceptLinks()");
+		} else {
+			s.removeContent("linkinterceptor");
+		}
  	}
  	
  	public String getFavicon() {
