@@ -12,3 +12,4 @@ loadContent(screen,mobilenav)
 loadContent(screen,linkinterceptor)
 setRole(screen,"aboutpage")
 callServer(initializeScreen,screen,content)
+loadContent(screen,analytics);
