@@ -357,6 +357,16 @@
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
 }
+.hal {
+	margin-top: 25px;
+	margin-bottom: 23px;
+}
+
+.tml {
+	margin-top: 32px;
+  	margin-bottom: 33px;
+}
+
 .about .main .partners-list .provider a .info h2 {
   font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
   margin: 0 auto;
