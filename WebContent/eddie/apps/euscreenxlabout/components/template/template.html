@@ -9,7 +9,7 @@
     <!-- jumbotron -->
     <div class="jumbotron-wide" id="intro">
         <span class="wrap">
-        	<h1>WELCOME TO EUSCREEN</h1>
+        	<h1>EUscreen, your portal for European audiovisual heritage since 2009</h1>
         </span>
     </div>
     
@@ -20,23 +20,25 @@
     	<div class="about-content row  welcome-text">
     		<div class="col-md-10 col-center">
     			<p>
-    				The EUscreen portal offers free online access to thousands of items of audiovisual heritage. It brings together clips that provide an insight into the social, cultural, political and economic events that have shaped the 20th and 21st centuries. As well as chronicling important historical events, the EUscreen portal allows you to explore television programmes that focus on everyday experience. EUscreen is also intended to be a resource for educators, researchers and media professionals searching for new audiovisual content from across Europe.
+    				EUscreen is a network of European broadcasters and audiovisual archives, media scholars, and technical experts. We facilitate access to and engagement with archival audiovisual content through our independent online portal - euscreen.eu. We also forge collaborations aimed at curating and generating content, enhancing audience engagement and improving our infrastructure. Learn more about the network <a href="foundation.html" data-prod="false">here</a>.
     			</p>
     			<p>
-    				The EUscreen portal was built by a consortium of European audiovisual archives, public broadcasters, academic and technical partners. It has been funded by the European Commission. The EUscreen project ran from 2009 - 2012 under the FP7 programme. Its successor, EUscreenXL, began in 2013 and runs until 2016 under the CIP ICT-PSP support programme. 
+    				The euscreen.eu portal offers free access to thousands of archival audiovisual items. It brings together clips that provide an insight into the social, cultural, political, and economic events that have shaped the 20th and 21st centuries. The portal also allows you to explore television programmes showcasing everyday life and is a resource for educators, researchers, and media professionals searching for audiovisual content from across Europe.
     			</p>
-    			<p>
-					The main objective of the project is to aggregate a comprehensive amount of professional audiovisual content. A large number of clips and programmes have been selected by broadcasters and archives from all across Europe.            			
-				</p>
-				<p>
-					The aim is to engage people with audiovisual heritage content and facilitate the use of videos, photos, audio and images. In the EUscreen project, <a href="http://oldportal.euscreen.eu/exhibitions.html" target="_blank">virtual exhibitions</a> were created in oder to contextualize the collection items. The EUscreenXL project continues this work by further developing <a href="myeuscreen.html" target="_blank" data-prod="false">MyEUscreen</a>. You can follow our ongoing work at the <a href="https://blog.euscreen.eu/homepage/" target="_blank">EUscreen blog</a>.
-				</p>
-				
-    			<!-- contact button-->
-    			<a class="box-link pull-right hidden-xs" href="mailto:info@euscreen.eu">CONTACT US FOR FURTHER INQUIRIES</a></span>
     		</div>
     	</div>
     	
+    	<!-- from then to now -->
+    	<div class="about-content row from-then-to-now">
+    		<div class="col-md-10 col-center">
+    			<h1>From then to now</h1>
+    			<p>
+    				The EUscreen initiative started in October 2009 with funding from the European Commission, though the initial concept was already set up in 2006 under the Video Active project. Since then, through a succession of EU-funded projects, more than 60,000 videos and related materials, representing Europe’s audiovisual heritage have been made available online through our portal. We aim to engage audiences from education, research and the general public with our collections. Today, the EUscreen network consists of 41 members from 27 countries. You can follow our ongoing work on the <a href="https://blog.euscreen.eu/homepage/" target="_blank">EUscreen blog</a>.
+    			</p>
+    			<!-- contact button-->
+    			<!-- <a class="box-link pull-right hidden-xs" href="mailto:info@euscreen.eu">CONTACT US FOR FURTHER INQUIRIES</a></span> -->
+    		</div>
+    	</div>
     	
     	<!-- selection -->
         <div class="row about-section">
@@ -66,92 +68,106 @@
                         <span class="pads"><h2>VIEW JOURNAL</h2></span>
                     </span>
                 </a>
-            </div>
+           	</div>
+    	</div>           	
+    	
+    	<!-- explore collection -->
+        <div class="about-content row explore-collection">
+        	<div class="col-md-10 col-center">
+        		<h1>Exploring the EUscreen Collection</h1>
+        		<p>
+        			The EUscreen portal provides access to clips and programmes from 25 broadcasters and audiovisual archives from 19 European countries. The collection consists of  thousands of media items including videos, photographs, audio files, and documents, curated by archivists and researchers. Select a country and find out more about the EUscreen collection.
+        		</p>
+        		<p class="visible-xs map-notification">
+                    Unfortunately Explore The Euscreen Collection only works in tablet or desktop. Please use bigger devices to access this page.
+                </p>
+        		<div class="content hidden-xs">
+    		
+    				<!-- left side -->
+            		<div class="info-wrap">
+        				<div class="info" data-spy="affix" data-offset-top="178" data-offset-bottom="0">
+        			
+		        			<!-- data -->
+		        			<div class="data">
+		            			<h1 id="selected-country">Please select region on the map</h1>
+		            			<div id="results-section" class="results-section">
+		                            <div class="country-counter">
+				            			<div class="item">
+				            				<span class="header">VIDEOS</span>
+				            				<span class="counter" id="selected-videos">0</span>
+				            			</div>
+				            			<div class="item">
+				            				<span class="header">IMAGES</span>
+				            				<span class="counter" id="selected-images">0</span>
+				            			</div>
+				            			<div class="item">
+				            				<span class="header hidden-sm">DOCUMENTS</span>
+		                                    <span class="header visible-sm">DOCS</span>
+				            				<span class="counter" id="selected-texts">0</span>
+				            			</div>
+				            			<div class="item">
+				            				<span class="header">AUDIO</span>
+				            				<span class="counter" id="selected-audios">0</span>
+				            			</div>
+				            			<div class="item">
+				            				<span class="header">SERIES</span>
+				            				<span class="counter" id="selected-series">0</span>
+				            			</div>
+		                            </div>
+			            			<div class="providers">
+			            				<span class="header">PROVIDERS</span>
+			            				<span class="provider" id="selected-providers">-</span>
+			            			</div>
+		            			</div>
+		        			</div>
+        			
+        					<!-- navigation -->
+        					<ul class="search-link" id="selected-searchlink"></ul>
+        				</div>
+            		</div>
+    		
+		    		<!-- the map -->
+		    		<div class="maps">
+        		
+		                <!-- map -->
+		                <div class="vmap" id="vmap"></div>
+    				</div>
+    			</div>
+        	</div>
         </div>
+    
         
         <!-- content selection -->
         <div class="about-content row content-selection">
         	<div class="col-md-10 col-center">
             		
-            	<h1>CONTENT SELECTION STRATEGY AND AGGREGATION</h1>
+            	<h1>Selecting and aggregating content on EUscreen</h1>
                 <p>
-                    The EUscreenXL delivery strategy involves a dual approach – providing enriched and high quality audiovisual content and metadata to the EUscreen platform’s Core Collection (also findable through <a href="http://europeana.eu" target="_blank">Europeana</a>) and the aggregation of a further 1 million data records and linked online content directly to Europeana.
+                    EUscreen is a trusted Europeana aggregation partner. We support our network members in providing their audiovisual content directly to Europeana and help them curate collections on the EUscreen portal. 
                 </p>
 				<p>
-    				The Core Collection will consist of 60,000 items of high quality, enriched and curated content and metadata made available through the EUscreen platform and Europeana. 20,000 items of content drawing on content from television series around Europe or from distinct film andvideo archive collections will be added to the existing content of 40,000 items (selected by historical topic or for specific exhibitions).            			
-    			</p>
-    			<p>
-    				EUscreenXL will also aggregate and deliver a further 1 million records and items of audiovisual content directly to Europeana. These are currently only available online through EUscreenXL’s Content Partner sites.
-    			</p>
-    			<p>
-    				EUscreenXL aims to provide a critical mass of audiovisual content and data to Europeana - to contribute to a rich and diverse portrait of European heritage alongside millions of other items of museum, gallery and library content.
+    				Currently, the euscreen.eu website features 60,000 items of high-quality, enriched, and curated audiovisual content and metadata. As an expert hub and audiovisual aggregator, EUscreen also regularly aggregates and updates a critical mass of audiovisual content and data to Europeana - contributing to a rich and diverse portrait of European heritage alongside millions of other items of museum, gallery, and library content.          			
     			</p>
         	</div>	
-        </div>
-        
-        
-        <!-- content selection -->
-        <div class="about-content row content-selection-aggregation">
-        	<div class="col-md-10 col-center">
-
-            	<!-- heading -->
-                <div class="heading">
-                    <h4>CONTENT FOR EUROPEANA</h4>
-                </div>
-
-                <!-- img -->
-            	<img src="/eddie/apps/euscreenxlelements/img/content/banners/ic-contentselection.jpg" class="img-responsive">
-        	</div>	
-        </div>
-        
-        <!-- content selection -->
-        <div class="about-content row content-selection-metadata">
-        	<div class="col-md-10 col-center">
-        		
-        		<!-- heading -->
-        		<div class="heading">
-            		<h4>METADATA FACTS BEHIND EUSCREEN</h4>
-        		</div>
-        		
-        		<!-- row -->
-        		<div class="custom-row">
-        			<div class="custom-col-20">
-        				<i class="icono icono-metadata"></i>
-        				<p>45 METADATA ELEMENTS</p>
-        			</div>
-        			<div class="custom-col-20">
-        				<i class="icono icono-ebu"></i>
-        				<p>MODELLED ON EBUCORE</p>
-        			</div>
-        			<div class="custom-col-20">
-        				<i class="icono icono-interoperable"></i>
-        				<p>HIGHLY INTEROPERABLE</p>
-        			</div>
-        			<div class="custom-col-20">
-        				<i class="icono icono-cc"></i>
-        				<p>AVAILABLE FOR REUSE UNDER CC0 LICENSE</p>
-        			</div>
-        			<div class="custom-col-20">
-        				<i class="icono icono-opendata"></i>
-        				<p>PUBLISHED AS LINKED OPEN DATA</p>
-        			</div>
-        		</div>
-        	</div>
-        </div>
+        </div>        
                         
         <!-- content selection -->
         <div class="about-content row content-partners">
         	<div class="col-md-10 col-center">
             		
-            	<h1>EUSCREEN PARTNERS</h1>
+            	<h1>EUscreen Foundation</h1>
     			<p>
-    				The EUscreenXL project consists of 31 organisations from 22 European countries who have come together to increase access to their materials. The consortium was established in 2006 and draws on the expertise of a wide network of audiovisual archives, academic and technical partners. In order to ensure the long-term sustainability of the network, the EUscreen Foundation was founded in 2013. The project also benefits from Assosiate Partners supporting the developments of the EUscreenXL.
+    				The EUscreen Foundation (Stichting EUscreen) was founded under Dutch law on 30 August 2013 in Utrecht, the Netherlands. The Foundation was set up to ensure the long-term sustainability of the network and its goals. The activities of EUscreen draw on the expertise of a wide network of audiovisual archives, academic and technical partners. Our network currently represents 41 members from 27 countries who have come together to increase access to their materials online. The foundation is also an Associate Partner supporting the development of various projects such as MediaNumeric, <a href="https://www.cadeah.eu/" target="_blank">CADEAH: European History Reloaded</a>, <a href="https://pro.europeana.eu/page/europeana-migration" target="_blank">Europeana Migration in Arts and Sciences</a>, <a href="https://pro.europeana.eu/project/europeana-media" target="_blank">Europeana Media</a>, <a href="http://blog.euscreen.eu/2019/12/reviewing-european-stories-co-creation-workshop/" target="_blank">(Re)Viewing European Stories</a> and <a href="https://enrs.eu/afterthegreatwar" target="_blank">After the Great War</a>.   				
     			</p>
     			<p>
-    				EUscreenXL offers a significant collection of audiovisual cultural heritage objects available online. Are you a collection holder who wants to make use of our technical and archival expertise and boost the visibility of your content? Join our network!
+    				<a class="box-link join-network" href="foundation.html">Learn more about the EUscreen Foundation here</a>
+    			</p>
+    			<h1>Join the network of European broadcasters and AV archives</h1>
+    			<p>
+    				Are you an audiovisual collection holder who wants to make use of our technical and archival expertise? Do you want to boost the visibility of your content? Join our network!
     			</p>
     			<p>
-    				Learn more about the benefits of joining the <a href="http://blog.euscreen.eu/join-us" target="_blank">EUscreenXL network</a> and <a href="mailto:info@euscreen.eu">contact us</a> for any further questions.
+    				Learn more about the EUscreen Foundation and the benefits of becoming a member of the network <a href="foundation.html">here</a> or contact us at <a href="mailto:info@euscreen.eu">info@euscreen.eu</a>
     			</p>
     			
     			<!-- partners filter -->

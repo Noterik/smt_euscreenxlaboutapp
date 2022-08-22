@@ -10,6 +10,7 @@ loadStylesheet(screen,all)
 loadStylesheet(screen,genericadditions)
 loadStylesheet(screen,terms)
 loadStylesheet(screen,specific)
+loadStylesheet(screen,jqvmap)
 loadContent(screen,template)
 loadContent(screen,header)
 loadContent(screen,footer)
@@ -17,4 +18,14 @@ loadContent(screen,mobilenav)
 loadContent(screen,linkinterceptor)
 setRole(screen,"aboutpage")
 callServer(initializeScreen,screen,content)
+
+.when device=desktop
+callServer(initMap,screen)
+
+.when device=atablet
+callServer(initMapTablet,screen)
+
+.when device=ipad
+callServer(initMapTablet,screen)
+
 loadContent(screen,analytics);

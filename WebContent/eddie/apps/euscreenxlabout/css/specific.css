@@ -13,13 +13,14 @@
 }
 .about .main .about-content {
   background: #ffffff;
-  padding: 50px 0 50px 0;
+  padding: 50px 0 20px 0;
 }
 .about .main .about-content h1 {
   text-align: center;
   color: #ec008c;
   margin: 0px 0 30px 0;
   line-height: 1.3em;
+  text-transform: uppercase;
 }
 .about .main .about-content p {
   margin-top: 20px;
@@ -59,7 +60,6 @@
   font-weight: lighter;
 }
 .about .main .content-selection {
-  margin-top: 6px;
   padding-bottom: 0px;
   border-left: 5px solid #f2f2f2;
   border-right: 5px solid #f2f2f2;
@@ -297,9 +297,9 @@
   margin-top: 10px;
 }
 .about .main .content-partners {
-  margin-top: 6px;
   border-left: 5px solid #f2f2f2;
   border-right: 5px solid #f2f2f2;
+  padding: 0 0 20px 0;
 }
 .about .main .content-partners h1 {
   color: #00aeef;
@@ -470,4 +470,158 @@
 }
 .about .main .about-section .right a:hover .hue {
   background: rgba(220, 109, 147, 0.5);
+}
+
+.about .main .content {
+  margin-top: 6px;
+  margin-left: -21px;
+  margin-right: -21px;
+}
+.about .main .content:before,
+.about .main .content:after {
+  content: " ";
+  display: table;
+}
+.about .main .content:after {
+  clear: both;
+}
+.about .main .content .info-wrap {
+  width: 187.5px;
+  float: left;
+  min-height: 200px;
+}
+.about .main .content .info-wrap .info {
+  width: 187.5px;
+  background: #fff;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.about .main .content .info-wrap .info .data {
+  padding: 20px;
+}
+.about .main .content .info-wrap .info .data h1 {
+  color: #8cc63f;
+  font-size: 1.286em;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.about .main .content .info-wrap .info .data .counter {
+  font-size: 1.714em;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  display: block;
+  margin-top: -5px;
+}
+.about .main .content .info-wrap .info .data .header {
+  display: block;
+  font-size: 0.77em;
+  color: #808080;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+.about .main .content .info-wrap .info .data .provider {
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  display: block;
+}
+.about .main .content .info-wrap .info .data .results-section {
+  display: none;
+}
+.about .main .content .info-wrap .info .data .results-section .country-counter:before,
+.about .main .content .info-wrap .info .data .results-section .country-counter:after {
+  content: " ";
+  display: table;
+}
+.about .main .content .info-wrap .info .data .results-section .country-counter:after {
+  clear: both;
+}
+.about .main .content .info-wrap .info .data .results-section .country-counter .item {
+  float: left;
+  width: 50%;
+}
+.about .main .content .info-wrap .info .data .results-section .providers {
+  margin-top: 10px;
+  clear: both;
+}
+.about .main .content .info-wrap .info .data .provider-list {
+  border-bottom: 1px solid #f2f2f2;
+  display: block;
+  padding: 8px 0 15px 0;
+}
+.about .main .content .info-wrap .info .data .provider-list:last-child {
+  border: 0px;
+  padding-bottom: 0px;
+}
+.about .main .content .info-wrap .info .data .provider-list .box-link {
+  font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+  font-size: 0.78em;
+  padding: 7px 10px 5px;
+  margin-top: 5px;
+  color: #8cc63f;
+  border-color: #8cc63f;
+}
+.about .main .content .info-wrap .info .data .provider-list .box-link:active {
+  color: #fff;
+  background: #8cc63f;
+  border-color: #8cc63f;
+}
+.about .main .content .info-wrap .info .search-link {
+  margin: 0;
+  padding: 0;
+}
+.about .main .content .info-wrap .info .search-link li {
+  border-top: 1px solid #f2f2f2;
+  list-style: none;
+}
+.about .main .content .info-wrap .info .search-link li a {
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  color: #808080;
+  display: block;
+}
+.about .main .content .info-wrap .info .search-link li a:hover {
+  color: #8cc63f;
+}
+.about .main .content .info-wrap .info.affix {
+  top: 75px;
+}
+.about .main .content .maps {
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 507.5px;
+  float: left;
+  overflow: hidden;
+}
+.about .main .content .maps .alert {
+  display: none;
+}
+.about .main .content .maps img {
+  width: 100%;
+}
+.about .main .content .maps .jqvmap-zoomin,
+.about .main .content .maps .jqvmap-zoomout {
+  background: rgba(140, 198, 63, 0.6);
+  color: #fff;
+  border-radius: 3px;
+  height: auto;
+  width: auto;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+  line-height: 20px;
+  padding: 5px 10px 5px 10px;
+}
+.about .main .content .maps .jqvmap-zoomin:hover,
+.about .main .content .maps .jqvmap-zoomout:hover {
+  background: rgba(140, 198, 63, 0.8);
+}
+.about .main .content .maps .jqvmap-zoomout {
+  top: 45px !important;
+}
+.about .main .map-notification {
+  color: #8cc63f;
+}
+.about .main .about-content .join-network {
+	margin-bottom: 50px;
 }

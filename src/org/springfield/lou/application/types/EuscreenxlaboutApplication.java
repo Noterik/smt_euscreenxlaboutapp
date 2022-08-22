@@ -1,5 +1,6 @@
 package org.springfield.lou.application.types;
 
+import org.json.simple.JSONObject;
 import org.springfield.lou.application.Html5Application;
 import org.springfield.lou.euscreen.config.Config;
 import org.springfield.lou.euscreen.config.ConfigEnvironment;
@@ -29,6 +30,7 @@ public class EuscreenxlaboutApplication extends Html5Application{
 		this.addReferidCSS("genericadditions", "/euscreenxlelements/generic");
 		this.addReferidCSS("all", "/euscreenxlelements/all");
 		this.addReferidCSS("terms", "/euscreenxlelements/terms");
+		this.addReferidCSS("jqvmap", "/euscreenxlelements/jqvmap");
 		
 		try{
 		
@@ -62,10 +64,44 @@ public class EuscreenxlaboutApplication extends Html5Application{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+ 		
+ 		DynamicMapContent.getLastChange();
  	}
  	
  	public String getFavicon() {
         return "/eddie/apps/euscreenxlelements/img/favicon.png";
     }
+ 	
+ 	@SuppressWarnings("unchecked")
+	public void initMapTablet(Screen s){
+ 		System.out.println("initMap()");
+ 		
+ 		String regionCode = s.getParameter("code");
+ 		
+ 		JSONObject args = new JSONObject();
+ 		args.put("device", "tablet");
+ 		 		
+ 		if(regionCode != null){
+ 			args.put("region", regionCode);
+ 		}
+ 		
+ 		s.putMsg("template", "", "initMap(" + args + ")");
+ 	}
+ 	
+ 	@SuppressWarnings("unchecked")
+	public void initMap(Screen s){
+ 		System.out.println("initMap()");
+ 		
+ 		String regionCode = s.getParameter("code");
+ 		
+ 		JSONObject args = new JSONObject();
+ 		
+ 		if(regionCode != null){
+ 			args.put("region", regionCode);		
+ 		}
+ 		
+ 		args.put("mapInfo", DynamicMapContent.getJsonMapData());	
+ 		s.putMsg("template", "", "initMap(" + args + ")");
+ 	};
 
 }
